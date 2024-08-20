@@ -13,7 +13,7 @@ DOCKER_COMPOSE="/usr/local/bin/docker-compose"
 get_last_modified() {
     echo "Obtendo lastModified da API..."
     # Executa o comando curl para obter os dados da API
-    curl_output=$(curl -sSf -u bitbucket:2025@bitUni_nexus "$API_URL")
+    curl_output=$(curl -sSf -u user:pass "$API_URL")
     if [ $? -ne 0 ]; then
         echo "Erro ao obter dados da API."
         current_datetime=$(date '+%Y-%m-%d %H:%M:%S')
